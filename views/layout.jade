@@ -4,5 +4,17 @@ html
   body
     div.main-container
       div.tab
+        div.top
+          div#logo
+          div#sub-content
+          div.push
+        div.bottom
+          div#menu
+            include includes/menu
+          div#footer
+            include includes/footer
       div.frame
-        block content
+        div#main-content
+          block content
+          div.push
+        div#navi
