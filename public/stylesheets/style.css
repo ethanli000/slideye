@@ -1,5 +1,3 @@
-html,
-body,
 div,
 p,
 h1 {
@@ -20,9 +18,11 @@ body {
   display: inline-block;
   width: 100%;
   height: 100%;
+  min-width: 800px;
   min-height: 560px;
   text-align: left;
 }
+/*left tab start*/
 .tab {
   float: left;
   width: 196px;
@@ -32,7 +32,7 @@ body {
   box-shadow: 4px 0px 10px -1px #ccc;
 }
 .tab .top {
-  background-color: #888;
+  background-color: #8d8d8d;
   min-height: 100%;
   max-height: 100%;
   height: auto !important;
@@ -50,25 +50,48 @@ body {
   background-color: #feea99;
 }
 /*memu start*/
+#menu {
+  z-index: 2;
+  position: relative;
+}
 #menu ul {
   margin: 0px;
   padding: 7px 0;
   text-align: right;
   list-style-type: none;
-  opacity: 1;
 }
 #menu ul li {
-  padding: 1px 10px 1px 0;
+  padding: 1px 12px 1px 0;
 }
 #menu ul li a {
   font-size: 2em;
   text-decoration: none;
-  color: #eee;
+  color: #efefef;
   font-family: 'Open Sans Condensed', sans-serif;
+}
+#menu ul li a .arrow {
+  border-top: 5px solid #8d8d8d;
+  border-right: 5px solid #efefef;
+  border-bottom: 5px solid #8d8d8d;
+  display: inline-block;
+  margin: 2px 0 2px 2px;
+  display: none;
+}
+#menu ul li a:hover {
+  color: #2b8282;
+}
+#menu ul li a:hover .arrow {
+  border-top: 5px solid #8d8d8d;
+  border-right: 5px solid #2b8282;
+  border-bottom: 5px solid #8d8d8d;
+  display: inline-block;
+  margin: 2px 0 2px 2px;
 }
 /*memu end*/
 /*footer start*/
 #footer {
+  position: relative;
+  z-index: 1;
   height: 60px;
   background-color: #266;
 }
@@ -78,9 +101,26 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.4em;
   line-height: 1.2em;
-  color: #eee;
+  color: #efefef;
 }
 /*footer end*/
+/*left tab end*/
+#radio-deco {
+  position: absolute;
+  top: -50px;
+  display: inline-block;
+  background-color: #266;
+  width: 196px;
+  height: 50px;
+}
+#radio-deco .radio {
+  display: inline-block;
+  background-color: #8d8d8d;
+  width: 196px;
+  height: 50px;
+  border-radius: 0 0 0 80px/0 0 0 50px;
+}
+/*frame start*/
 .frame {
   position: relative;
   margin-left: 200px;
