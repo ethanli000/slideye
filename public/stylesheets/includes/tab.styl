@@ -1,0 +1,118 @@
+/*tab start*/
+$leftTabFooterHeight = $bottomTabHeight
+$leftTabbottomHeight = 130px + $leftTabFooterHeight
+$leftTabBGColor = #BBB
+$leftTabTextColor = #EFEFEF
+
+left-arrow(range,style,bgc,c)
+  border-top: range style bgc
+  border-right: range*5 style c
+  border-bottom: range style bgc
+
+.tab
+  .top
+    background-color: $leftTabBGColor
+    min-height: 100%
+    max-height: 100%
+    height: auto !important
+    height: 100%
+    margin: 0 auto -($leftTabbottomHeight)
+    .push
+      height: $leftTabbottomHeight
+  .bottom
+    height: $leftTabbottomHeight
+
+#logo
+  height: 50px
+  background-color: #FEEA99
+
+#sub-content
+  ul
+    margin: 0
+    padding:10px 0
+    text-align: right
+    list-style-type: none
+    li
+      padding: 1px 15px 1px        
+      a
+        font-size: 1.5em
+        text-decoration: none
+        color: $leftTabTextColor
+        font-family: $menuFont
+    li.selected
+      a
+        color: lighten(#266,15%)
+      .arrow
+        left-arrow(3px,solid,$leftTabBGColor,lighten(#266,10%))
+        display: inline-block
+        margin: 2px 0 2px 2px
+
+/*memu start*/
+
+#menu
+  z-index:2
+  position: relative
+#menu ul
+  margin: 0px
+  padding: 7px 0
+  text-align: right
+  list-style-type: none
+  li
+    padding: 1px 15px 1px 0
+    a
+      font-size: 2em
+      text-decoration: none
+      color: $leftTabTextColor
+      font-family:$menuFont
+      .arrow
+        left-arrow(5px,solid,$leftTabBGColor,$leftTabTextColor)
+        //display: inline-block
+        margin: 2px 0 2px 2px
+        display: none
+      &:hover 
+        color: lighten(#266,10%)
+        .arrow
+          left-arrow(5px,solid,$leftTabBGColor,lighten(#266,10%))
+          display: inline-block
+          margin: 2px 0 2px 2px
+
+#menu ul li.selected a
+  color: lighten(#266,10%)
+  .arrow
+    left-arrow(3px,solid,$leftTabBGColor,lighten(#266,10%))
+    display: inline-block
+    margin: 4px 0 4px 2px      
+          
+/*memu end*/
+
+/*footer start*/
+#footer
+  position: relative
+  z-index: 1
+  height: $leftTabFooterHeight
+  background-color: #266
+  .contact
+    text-align: right
+    padding: 10px 15px 8px
+    font-family: $menuFont
+    font-size: 1.4em
+    line-height: 1.2em
+    color: $leftTabTextColor
+/*footer end*/
+/*tab end*/
+
+/*
+#radio-deco
+  position: absolute
+  top: -50px
+  display: inline-block
+  background-color: #266
+  width:($rightTabWidth - 4px)
+  height:50px
+  .radio
+    display: inline-block
+    background-color: $leftTabBGColor
+    width:($rightTabWidth - 4px)
+    height:50px
+    border-radius: 0 0 0 80px/0 0 0 50px;
+*/

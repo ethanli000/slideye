@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div.photo-warp
+   img(class="photo",src="/images/test.jpg")
+block sub-content
+  ul
+    each val, index in photoProjectList
+      case index
+        when 0
+          li.selected
+            a(href="/photography/#{val.pid}") #{val.title}
+            div.arrow
+        default
+          li
+            a(href="/photography/#{val.pid}") #{val.title}
