@@ -1,9 +1,8 @@
 $menuFont = 'Open Sans Condensed', sans-serif
 $contentFont = "Lucida Grande", Helvetica, Arial, sans-serif
 
-$rightTabWidth = 25%
-$rightTabWidth1280 = 20%
-$mainNaviHeight = 60px
+$rightTabWidth = 200px
+$bottomTabHeight = 50px
 
 div,p,h1
   margin:0
@@ -26,122 +25,22 @@ body
   min-height: 560px
   text-align: left
 
-/*left tab start*/
-$leftTabFooterHeight = 190px
-$leftTabBGColor = #8D8D8D
-$leftTabTextColor = #EFEFEF
-
 .tab
   float: left
+  position: relative
+  z-index: 10
   width: $rightTabWidth
-  @media screen and (min-width: 1280px)
-    width: $rightTabWidth1280 
   height: 100%
   -webkit-box-shadow: 2px 0px 10px -1px #ccc
   -moz-box-shadow: 2px 0px 10px -1px #ccc
   box-shadow: 4px 0px 10px -1px #ccc
-  .top
-    background-color: $leftTabBGColor
-    min-height: 100%
-    max-height: 100%
-    height: auto !important
-    height: 100%
-    margin: 0 auto -($leftTabFooterHeight)
-    .push
-      height: $leftTabFooterHeight
-  .bottom
-    height: $leftTabFooterHeight
 
-#logo
-  height: 50px
-  background-color: #FEEA99
+@import 'includes/tab'
 
-/*memu start*/
-#menu
-  z-index:2
-  position: relative
-#menu ul
-  margin: 0px
-  padding: 7px 0
-  text-align: right
-  list-style-type: none
-  li
-    padding: 1px 12px 1px 0
-    a
-      font-size: 2em
-      text-decoration: none
-      color: $leftTabTextColor
-      font-family:$menuFont
-      .arrow
-        left-arrow(5px solid,$leftTabBGColor,$leftTabTextColor)
-        display: inline-block
-        margin: 2px 0 2px 2px
-        display: none
-      &:hover
-        color: lighten(#266,10%)
-        .arrow
-          left-arrow(5px solid,$leftTabBGColor,lighten(#266,10%))
-          display: inline-block
-          margin: 2px 0 2px 2px
-/*memu end*/
-
-/*footer start*/
-#footer
-  position: relative
-  z-index: 1
-  height: $mainNaviHeight
-  background-color: #266
-  .contact
-    text-align: right
-    padding: 16px 12px 12px
-    font-family: $menuFont
-    font-size: 1.4em
-    line-height: 1.2em
-    color: $leftTabTextColor
-/*footer end*/
-/*left tab end*/
-
-/*
-left-arrow(range,bgc,c)
-  border-top: range bgc
-  border-right: range c
-  border-bottom: range bgc
-
-#radio-deco
-  position: absolute
-  top: -50px
-  display: inline-block
-  background-color: #266
-  width:($rightTabWidth - 4px)
-  height:50px
-  .radio
-    display: inline-block
-    background-color: $leftTabBGColor
-    width:($rightTabWidth - 4px)
-    height:50px
-    border-radius: 0 0 0 80px/0 0 0 50px;
-*/
-
-/*frame start*/
 .frame
-  position: relative
-  z-index = -1
   margin-left: $rightTabWidth
-  @media screen and (min-width: 1280px)
-    margin-left: $rightTabWidth1280
   height: 100%
   background-color: #BAB6B4
 
-#main-content
-  background-color: #FAF6F4
-  width: 100%
-  min-height: 100%
-  height: auto !important
-  height: 100%
-  margin: 0 auto -($mainNaviHeight)
-  .push
-    height: $mainNaviHeight
+@import 'includes/frame'
 
-#navi
-  height: $mainNaviHeight
-  background-color: #F0F0DD

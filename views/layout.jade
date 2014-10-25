@@ -7,6 +7,7 @@ html
         div.top
           div#logo
           div#sub-content
+            block sub-content
           div.push
         div.bottom
           div#menu
@@ -17,6 +18,7 @@ html
             include includes/footer
       div.frame
         div#main-content
+          //div#top-navi
           block content
           div.push
-        div#navi
+        div#bottom-navi
