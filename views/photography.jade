@@ -9,8 +9,11 @@ block sub-content
       case index
         when 0
           li.selected
-            a(href="/photography/#{val.pid}") #{val.title}
-            div.arrow
+            a(href="/photography/#{val.pid}")
+              div.arrow
+              | #{val.title}
         default
           li
-            a(href="/photography/#{val.pid}") #{val.title}
+            a(href="/photography/#{val.pid}")
+              div.arrow
+              | #{val.title}

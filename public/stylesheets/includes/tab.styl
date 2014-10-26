@@ -1,12 +1,14 @@
 /*tab start*/
 $leftTabFooterHeight = $bottomTabHeight
 $leftTabbottomHeight = 130px + $leftTabFooterHeight
-$leftTabBGColor = #BBB
+$leftTabPaddingRight = 10px;
+$leftTabBGColor = #CFCFCF
 $leftTabTextColor = #EFEFEF
+$leftTabMainColor = #3AA
 
 left-arrow(range,style,bgc,c)
   border-top: range style bgc
-  border-right: range*5 style c
+  border-left: range*9 style c
   border-bottom: range style bgc
 
 .tab
@@ -24,64 +26,84 @@ left-arrow(range,style,bgc,c)
 
 #logo
   height: 50px
-  background-color: #FEEA99
+  background-image: url('/images/logo.png')
+  background-repeat: no-repeat
+  background-size: 200px 30px
+  background-position: right $leftTabPaddingRight top 10px
+  a#home
+    display: inline-block
+    height: 50px
+    width: 200px
 
 #sub-content
   ul
     margin: 0
-    padding:10px 0
+    padding: 0 $leftTabPaddingRight 0 0
     text-align: right
     list-style-type: none
     li
-      padding: 1px 15px 1px        
+      padding: 1px 0 1px        
       a
         font-size: 1.5em
         text-decoration: none
         color: $leftTabTextColor
         font-family: $menuFont
+        .arrow
+          left-arrow(3px,solid,$leftTabBGColor,$leftTabTextColor)
+          //display: inline-block
+          margin: 2px 0 2px 2px
+          display: none
+        &:hover
+          color: lighten($leftTabMainColor,18%)
+          .arrow
+            left-arrow(3px,solid,$leftTabBGColor,lighten($leftTabMainColor,18%))
+            display: inline-block
+            margin: 2px 2px 2px 0
+        
     li.selected
       a
-        color: lighten(#266,15%)
+        color: lighten($leftTabMainColor,18%)
       .arrow
-        left-arrow(3px,solid,$leftTabBGColor,lighten(#266,10%))
+        left-arrow(3px,solid,$leftTabBGColor,lighten($leftTabMainColor,18%))
         display: inline-block
-        margin: 2px 0 2px 2px
+        margin: 2px 2px 2px 0
 
 /*memu start*/
 
 #menu
   z-index:2
   position: relative
+  padding: 0 $leftTabPaddingRight 0 0
 #menu ul
   margin: 0px
   padding: 7px 0
   text-align: right
   list-style-type: none
   li
-    padding: 1px 15px 1px 0
+    padding: 1px 0 1px 0
     a
       font-size: 2em
       text-decoration: none
       color: $leftTabTextColor
       font-family:$menuFont
       .arrow
-        left-arrow(5px,solid,$leftTabBGColor,$leftTabTextColor)
+        left-arrow(3px,solid,$leftTabBGColor,$leftTabTextColor)
         //display: inline-block
         margin: 2px 0 2px 2px
         display: none
-      &:hover 
-        color: lighten(#266,10%)
+      &:hover
+        color: darken($leftTabMainColor,8%)
         .arrow
-          left-arrow(5px,solid,$leftTabBGColor,lighten(#266,10%))
+          left-arrow(3px,solid,$leftTabBGColor,darken($leftTabMainColor,8%))
           display: inline-block
-          margin: 2px 0 2px 2px
+          margin: 4px 2px 4px 0
 
 #menu ul li.selected a
-  color: lighten(#266,10%)
+  color: darken($leftTabMainColor,8%)
   .arrow
-    left-arrow(3px,solid,$leftTabBGColor,lighten(#266,10%))
+    left-arrow(3px,solid,$leftTabBGColor,darken($leftTabMainColor,8%))
     display: inline-block
-    margin: 4px 0 4px 2px      
+    margin: 4px 2px 4px 0
           
 /*memu end*/
 
@@ -90,10 +112,10 @@ left-arrow(range,style,bgc,c)
   position: relative
   z-index: 1
   height: $leftTabFooterHeight
-  background-color: #266
+  background-color: $leftTabMainColor
   .contact
     text-align: right
-    padding: 10px 15px 8px
+    padding: 10px $leftTabPaddingRight 8px
     font-family: $menuFont
     font-size: 1.4em
     line-height: 1.2em
@@ -106,7 +128,7 @@ left-arrow(range,style,bgc,c)
   position: absolute
   top: -50px
   display: inline-block
-  background-color: #266
+  background-color: $leftTabMainColor
   width:($rightTabWidth - 4px)
   height:50px
   .radio
