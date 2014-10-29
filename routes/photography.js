@@ -26,7 +26,7 @@ router.get('/', function(req, res) {
     photoProject["title"] = name;
     return photoProject;
   })(2,"hello, kamakura");
-  res.render('photography', { photoProjectList: photoProjectList });
+  res.render('photography', { title: "phpotography", photoProjectList: photoProjectList });
 });
 
 module.exports = router;
