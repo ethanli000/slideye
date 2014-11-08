@@ -44,7 +44,7 @@ left-arrow(range,style,bgc,c)
     li
       padding: 1px 0 1px        
       a
-        font-size: 1.5em
+        font-size: 1.8em
         text-decoration: none
         color: $leftTabTextColor
         font-family: $menuFont
@@ -62,9 +62,9 @@ left-arrow(range,style,bgc,c)
         
     li.selected
       a
-        color: lighten($leftTabMainColor,18%)
+        color: lighten($leftTabMainColor,15%)
       .arrow
-        left-arrow(3px,solid,$leftTabBGColor,lighten($leftTabMainColor,18%))
+        left-arrow(3px,solid,$leftTabBGColor,lighten($leftTabMainColor,15%))
         display: inline-block
         margin: 2px 2px 2px 0
 
@@ -92,16 +92,16 @@ left-arrow(range,style,bgc,c)
         margin: 2px 0 2px 2px
         display: none
       &:hover
-        color: darken($leftTabMainColor,8%)
+        color: lighten($leftTabMainColor,8%)
         .arrow
-          left-arrow(3px,solid,$leftTabBGColor,darken($leftTabMainColor,8%))
+          left-arrow(3px,solid,$leftTabBGColor,lighten($leftTabMainColor,8%))
           display: inline-block
           margin: 4px 2px 4px 0
 
 #menu ul li.selected a
-  color: darken($leftTabMainColor,8%)
+  color: lighten($leftTabMainColor,8%)
   .arrow
-    left-arrow(3px,solid,$leftTabBGColor,darken($leftTabMainColor,8%))
+    left-arrow(3px,solid,$leftTabBGColor,lighten($leftTabMainColor,8%))
     display: inline-block
     margin: 4px 2px 4px 0
           
