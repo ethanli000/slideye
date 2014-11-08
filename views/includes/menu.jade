@@ -1,17 +1,17 @@
 ul
-  li
+  li(class=(menuItem=="selfie")?"selected":"")
     a(href="/selfie/")
       div.arrow
       | SELFIE
-  li(class="selected")
+  li(class=(menuItem=="photography")?"selected":"")
     a(href="/photography/")
       div.arrow
       | PHOTOGRAPHY
-  li
+  li(class=(menuItem=="project")?"selected":"")
     a(href="/project/")
       div.arrow
       |PROJECT
-  li
+  li(class=(menuItem=="blog")?"selected":"")
     a(href="/blog/")
       div.arrow
       | BLOG

@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'SLIDEYE' });
+  var renderParameters = { menuItem: 'SLIDEYE' };
+  res.render('index', renderParameters);
 });
 
 module.exports = router;

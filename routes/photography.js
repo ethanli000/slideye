@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+var menuItem = "photography";
+
 /* GET users listing. */
 router.get('/', function(req, res) {
   var photoProjectList = new Array();
@@ -26,7 +28,10 @@ router.get('/', function(req, res) {
     photoProject["title"] = name;
     return photoProject;
   })(2,"hello, kamakura");
-  res.render('photography', { title: "phpotography", photoProjectList: photoProjectList });
+
+  //TODO: how to make a main render for global parameters? like title/menu/...
+  var renderParameters = { menuItem: menuItem, photoProjectList: photoProjectList };
+  res.render('photography', renderParameters);
 });
 
 module.exports = router;

@@ -33,7 +33,7 @@ body {
   box-shadow: 4px 0px 10px -1px #ccc;
 }
 .tab .top {
-  background-color: #cfcfcf;
+  background-color: #ededed;
   min-height: 100%;
   max-height: 100%;
   height: auto !important;
@@ -50,13 +50,13 @@ body {
   height: 50px;
   background-image: url("/images/logo.png");
   background-repeat: no-repeat;
-  background-size: 200px 30px;
-  background-position: right 10px top 10px;
+  background-size: 200px 50px;
+  background-position: right 10px top 0px;
 }
 #logo a#home {
   display: inline-block;
   height: 50px;
-  width: 200px;
+  width: 100%;
 }
 #sub-content ul {
   margin: 0;
@@ -70,33 +70,33 @@ body {
 #sub-content ul li a {
   font-size: 1.5em;
   text-decoration: none;
-  color: #efefef;
+  color: #555;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 #sub-content ul li a .arrow {
-  border-top: 3px solid #cfcfcf;
-  border-left: 27px solid #efefef;
-  border-bottom: 3px solid #cfcfcf;
+  border-top: 3px solid #ededed;
+  border-left: 27px solid #555;
+  border-bottom: 3px solid #ededed;
   margin: 2px 0 2px 2px;
   display: none;
 }
 #sub-content ul li a:hover {
-  color: #49c8c8;
+  color: #2dc9c9;
 }
 #sub-content ul li a:hover .arrow {
-  border-top: 3px solid #cfcfcf;
-  border-left: 27px solid #49c8c8;
-  border-bottom: 3px solid #cfcfcf;
+  border-top: 3px solid #ededed;
+  border-left: 27px solid #2dc9c9;
+  border-bottom: 3px solid #ededed;
   display: inline-block;
   margin: 2px 2px 2px 0;
 }
 #sub-content ul li.selected a {
-  color: #49c8c8;
+  color: #2dc9c9;
 }
 #sub-content ul li.selected .arrow {
-  border-top: 3px solid #cfcfcf;
-  border-left: 27px solid #49c8c8;
-  border-bottom: 3px solid #cfcfcf;
+  border-top: 3px solid #ededed;
+  border-left: 27px solid #2dc9c9;
+  border-bottom: 3px solid #ededed;
   display: inline-block;
   margin: 2px 2px 2px 0;
 }
@@ -117,33 +117,33 @@ body {
 #menu ul li a {
   font-size: 2em;
   text-decoration: none;
-  color: #efefef;
+  color: #555;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 #menu ul li a .arrow {
-  border-top: 3px solid #cfcfcf;
-  border-left: 27px solid #efefef;
-  border-bottom: 3px solid #cfcfcf;
+  border-top: 3px solid #ededed;
+  border-left: 27px solid #555;
+  border-bottom: 3px solid #ededed;
   margin: 2px 0 2px 2px;
   display: none;
 }
 #menu ul li a:hover {
-  color: #2f9c9c;
+  color: #1f8d8d;
 }
 #menu ul li a:hover .arrow {
-  border-top: 3px solid #cfcfcf;
-  border-left: 27px solid #2f9c9c;
-  border-bottom: 3px solid #cfcfcf;
+  border-top: 3px solid #ededed;
+  border-left: 27px solid #1f8d8d;
+  border-bottom: 3px solid #ededed;
   display: inline-block;
   margin: 4px 2px 4px 0;
 }
 #menu ul li.selected a {
-  color: #2f9c9c;
+  color: #1f8d8d;
 }
 #menu ul li.selected a .arrow {
-  border-top: 3px solid #cfcfcf;
-  border-left: 27px solid #2f9c9c;
-  border-bottom: 3px solid #cfcfcf;
+  border-top: 3px solid #ededed;
+  border-left: 27px solid #1f8d8d;
+  border-bottom: 3px solid #ededed;
   display: inline-block;
   margin: 4px 2px 4px 0;
 }
@@ -151,7 +151,7 @@ body {
   position: relative;
   z-index: 1;
   height: 50px;
-  background-color: #3aa;
+  background-color: #299;
 }
 #footer .contact {
   text-align: right;
@@ -159,7 +159,7 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.4em;
   line-height: 1.2em;
-  color: #efefef;
+  color: #ededed;
 }
 .frame {
   margin-left: 220px;
