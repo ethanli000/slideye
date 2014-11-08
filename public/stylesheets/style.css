@@ -26,7 +26,7 @@ body {
   float: left;
   position: relative;
   z-index: 10;
-  width: 220px;
+  width: 200px;
   height: 100%;
   -webkit-box-shadow: 2px 0px 10px -1px #ccc;
   -moz-box-shadow: 2px 0px 10px -1px #ccc;
@@ -50,7 +50,7 @@ body {
   height: 50px;
   background-image: url("/images/logo.png");
   background-repeat: no-repeat;
-  background-size: 200px 50px;
+  background-size: 180px 50px;
   background-position: right 10px top 0px;
 }
 #logo a#home {
@@ -163,7 +163,7 @@ body {
   height: 30px;
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 #weibo {
   background-image: url("/images/icons/weibo_off.png");
@@ -204,7 +204,7 @@ body {
   color: #fff;
 }
 .frame {
-  margin-left: 220px;
+  margin-left: 200px;
   height: 100%;
   background-color: #bab6b4;
 }
