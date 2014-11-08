@@ -113,13 +113,46 @@ left-arrow(range,style,bgc,c)
   z-index: 1
   height: $leftTabFooterHeight
   background-color: $leftTabMainColor
-  .contact
-    text-align: right
+  .content
     padding: 10px $leftTabPaddingRight 8px
-    font-family: $menuFont
-    font-size: 1.4em
-    line-height: 1.2em
-    color: #EDEDED
+
+#footer a
+  float: right
+  display: inline-block
+  width: 30px
+  height:30px
+  background-repeat: no-repeat
+  background-size: 30px 30px
+  margin-left:5px;
+
+set_social_icon(name)
+  background-image: url(s('/images/icons/%s_off.png',name))
+  &:hover
+    background-image: url(s('/images/icons/%s_on.png',name))
+
+#weibo
+  set_social_icon(weibo)
+  
+#insta
+  set_social_icon(insta)
+
+#linkedin
+  set_social_icon(linkedin)
+
+#facebook
+  set_social_icon(facebook)
+
+#mail
+  set_social_icon(mail)
+
+#copyright
+  margin-top: 4px
+  clear: both
+  text-align: right
+  font-family: $menuFont
+  font-size: 1.3em
+  //line-height: 1em
+  color: #FFF
 /*footer end*/
 /*tab end*/
 

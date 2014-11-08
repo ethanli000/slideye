@@ -38,13 +38,13 @@ body {
   max-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -180px;
+  margin: 0 auto -200px;
 }
 .tab .top .push {
-  height: 180px;
+  height: 200px;
 }
 .tab .bottom {
-  height: 180px;
+  height: 200px;
 }
 #logo {
   height: 50px;
@@ -150,16 +150,58 @@ body {
 #footer {
   position: relative;
   z-index: 1;
-  height: 50px;
+  height: 70px;
   background-color: #299;
 }
-#footer .contact {
-  text-align: right;
+#footer .content {
   padding: 10px 10px 8px;
+}
+#footer a {
+  float: right;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  margin-left: 5px;
+}
+#weibo {
+  background-image: url("/images/icons/weibo_off.png");
+}
+#weibo:hover {
+  background-image: url("/images/icons/weibo_on.png");
+}
+#insta {
+  background-image: url("/images/icons/insta_off.png");
+}
+#insta:hover {
+  background-image: url("/images/icons/insta_on.png");
+}
+#linkedin {
+  background-image: url("/images/icons/linkedin_off.png");
+}
+#linkedin:hover {
+  background-image: url("/images/icons/linkedin_on.png");
+}
+#facebook {
+  background-image: url("/images/icons/facebook_off.png");
+}
+#facebook:hover {
+  background-image: url("/images/icons/facebook_on.png");
+}
+#mail {
+  background-image: url("/images/icons/mail_off.png");
+}
+#mail:hover {
+  background-image: url("/images/icons/mail_on.png");
+}
+#copyright {
+  margin-top: 4px;
+  clear: both;
+  text-align: right;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.4em;
-  line-height: 1.2em;
-  color: #ededed;
+  font-size: 1.3em;
+  color: #fff;
 }
 .frame {
   margin-left: 220px;
@@ -173,10 +215,10 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -50px;
+  margin: 0 auto -70px;
 }
 #main-content .push {
-  height: 50px;
+  height: 70px;
 }
 .photo-warp {
   margin: 0 auto;
@@ -190,7 +232,7 @@ img.photo {
   height: 50px;
 }
 #bottom-navi {
-  height: 50px;
+  height: 70px;
   background-color: #f7f7e9;
   opacity: 0.5;
 }
