@@ -9,8 +9,27 @@ $mainNaviHeight = $bottomTabHeight
   height: auto !important
   height: 100%
   margin: 0 auto -($mainNaviHeight)
+  overflow: auto
   .push
     height: $mainNaviHeight
+
+#main-content::-webkit-scrollbar
+  width: 10px
+
+#main-content::-webkit-scrollbar-track
+  background: rgba(200,200,200,0.9);
+  -webkit-box-shadow: inset 0 0 1px rgba(10,10,10,0.7)
+
+#main-content::-webkit-scrollbar-thumb
+  background: rgba(210,90,100,0.6); 
+
+#main-content::-webkit-scrollbar-thumb:hover
+  background: rgba(210,90,100,0.9)
+  
+#main-content::-webkit-scrollbar-button
+  width: 0
+  height: 0
+  display: none
 
 .photo-warp
   margin: 0 auto
