@@ -1,0 +1,29 @@
+extends layout
+
+block head-individual-include
+  link(rel='stylesheet', href='/stylesheets/selfie.css')
+  script(src='/javascripts/selfie.js')
+
+block content
+  div.selfie-main
+    div#status
+    div#ability
+    div#skill
+    div#interests
+
+
+block sub-content
+  ul
+    li
+      a(href="#status")
+        | STATUS
+      .right-arrow
+    li
+      a(href="#ability")
+        | ABILITY
+    li
+      a(href="#skill")
+        | SKILL
+    li
+      a(href="#interests")
+        | INTERESTS
